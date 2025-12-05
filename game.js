@@ -39,7 +39,7 @@ function moveTarget() {
     if (!gameActive) return;
     
     const gameScreenRect = gameScreen.getBoundingClientRect();
-    const targetSize = 50;
+    const targetSize = target.offsetWidth;
     
     // Calculate random position within game screen bounds
     const maxX = gameScreenRect.width - targetSize;
