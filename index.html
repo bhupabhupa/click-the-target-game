@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Target Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Click the Target</h1>
+            <div class="stats">
+                <div class="score-display">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="misses-display">
+                    <span class="label">Misses:</span>
+                    <span id="misses">0</span>
+                    <span class="max-misses">/3</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="game-screen">
+            <div id="target" class="target"></div>
+        </div>
+        
+        <div id="game-over" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <button id="restart-btn" class="restart-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
